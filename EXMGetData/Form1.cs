@@ -45,29 +45,45 @@ namespace EXMGetData
 
             if (ioTestSet != null) {
 
-                this.textBoxAllInfo.Text += "CONNECTED!!! \r\n";
+                this.textBoxAllInfo.Text += "!!!connected!!! \r\n";
 
-                button2.BackColor = Color.Green;
+                button4.BackColor = Color.Green;
 
-                textBoxAllInfo.Text += "Command: *IDN? \r\n";
+                //textBoxAllInfo.Text += "Command: *IDN? \r\n";
                 ioTestSet.WriteString("*IDN?", true);
-                textBoxAllInfo.Text += "SERIAL NUMBER: " + ioTestSet.ReadString() + "\r\n";
+                textBoxAllInfo.Text += "EXM SERIAL: " + ioTestSet.ReadString() + "\r\n";
 
                 Thread.Sleep(200);
 
-                textBoxAllInfo.Text += "Command: *OPT? \r\n";
+                //textBoxAllInfo.Text += "Command: :SYSTem:MODule:NAME? \r\n";
+                ioTestSet.WriteString(":SYSTem:MODule:NAME?", true);
+                textBoxAllInfo.Text += "MODULE Nº: " + ioTestSet.ReadString() + "\r\n";
+
+                Thread.Sleep(200);
+
+                //textBoxAllInfo.Text += "Command: *:SYSTem:MODule:SERial? \r\n";
+                ioTestSet.WriteString(":SYSTem:MODule:SERial?", true);
+                textBoxAllInfo.Text += "MODULE SERIAL: " + ioTestSet.ReadString() + "\r\n";
+
+                Thread.Sleep(200);
+
+                //textBoxAllInfo.Text += "Command: *OPT? \r\n";
                 ioTestSet.WriteString("*OPT?", true);
-                textBoxAllInfo.Text += "LICENSE 5FM: " + ioTestSet.ReadString() + "\r\n";
+                textBoxAllInfo.Text += "LICENSE: " + ioTestSet.ReadString() + "\r\n";
 
                 Thread.Sleep(200);
 
-                textBoxAllInfo.Text += "Command: *INST:CAT? \r\n";
+                //textBoxAllInfo.Text += "Command: *INST:CAT? \r\n";
                 ioTestSet.WriteString("INST:CAT?", true);
-                textBoxAllInfo.Text += "Resp: <-" + ioTestSet.ReadString() + "\r\n";
+                textBoxAllInfo.Text += "OPTIONS (TDD/FDD): " + ioTestSet.ReadString() + "\r\n";
+             
 
+                Thread.Sleep(200);
 
-                textBoxAllInfo.Text += "FULL INFO: " + ioTestSet.ReadString() + "," + ioTestSet.ReadString();
-
+                //textBoxAllInfo.Text += "Command: :SYSTem:HID? \r\n";
+                ioTestSet.WriteString(":SYSTem:HID?", true);
+                textBoxAllInfo.Text += ioTestSet.ReadString() + "\r\n";
+                
 
            
             }
