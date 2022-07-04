@@ -50,38 +50,38 @@ namespace EXMGetData
 
                 //textBoxAllInfo.Text += "Command: *IDN? \r\n";
                 ioTestSet.WriteString("*IDN?", true);
-                textBoxAllInfo.Text += "EXM SERIAL: " + ioTestSet.ReadString() + "\r\n\r\n";
+                textBoxAllInfo.Text += "-->EXM SERIAL: " + ioTestSet.ReadString() + "\r\n\r\n";
 
                 Thread.Sleep(200);
 
                 //textBoxAllInfo.Text += "Command: :SYSTem:MODule:NAME? \r\n";
                 ioTestSet.WriteString(":SYSTem:MODule:NAME?", true);
-                textBoxAllInfo.Text += "MODULE Nº: " + ioTestSet.ReadString() + "\r\n\r\n";
+                textBoxAllInfo.Text += "-->MODULE Nº: " + ioTestSet.ReadString() + "\r\n\r\n";
 
                 Thread.Sleep(200);
 
                 //textBoxAllInfo.Text += "Command: *:SYSTem:MODule:SERial? \r\n";
                 ioTestSet.WriteString(":SYSTem:MODule:SERial?", true);
-                textBoxAllInfo.Text += "MODULE SERIAL: " + ioTestSet.ReadString() + "\r\n\r\n";
+                textBoxAllInfo.Text += "-->MODULE SERIAL: " + ioTestSet.ReadString() + "\r\n\r\n";
 
                 Thread.Sleep(200);
 
                 //textBoxAllInfo.Text += "Command: *OPT? \r\n";
                 ioTestSet.WriteString("*OPT?", true);
-                textBoxAllInfo.Text += "LICENSE: " + ioTestSet.ReadString() + "\r\n\r\n";
+                textBoxAllInfo.Text += "-->LICENSE: " + ioTestSet.ReadString() + "\r\n\r\n";
+    
+            
+                Thread.Sleep(200);
+
+                //textBoxAllInfo.Text += "Command: :SYSTem:LICense:MODule:HID? \r\n";
+                ioTestSet.WriteString(":SYSTem:LICense:MODule:HID?", true);
+                textBoxAllInfo.Text += "-->" + ioTestSet.ReadString() + "\r\n\r\n";
 
                 Thread.Sleep(200);
 
                 //textBoxAllInfo.Text += "Command: *INST:CAT? \r\n";
                 ioTestSet.WriteString("INST:CAT?", true);
-                textBoxAllInfo.Text += "OPTIONS (TDD/FDD): " + ioTestSet.ReadString() + "\r\n\r\n";
-             
-
-                Thread.Sleep(200);
-
-                //textBoxAllInfo.Text += "Command: :SYSTem:LICense:MODule:HID? \r\n";
-                ioTestSet.WriteString(":SYSTem:LICense:MODule:HID?", true);
-                textBoxAllInfo.Text += ioTestSet.ReadString() + "\r\n\r\n";
+                textBoxAllInfo.Text += "-->OPTIONS (TDD/FDD): " + ioTestSet.ReadString() + "\r\n\r\n";
 
                 Thread.Sleep(200);
 
