@@ -41,7 +41,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(587, 498);
+            this.button1.Location = new System.Drawing.Point(584, 498);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(39, 23);
             this.button1.TabIndex = 0;
@@ -72,6 +72,7 @@
             // 
             // textBoxAllInfo
             // 
+            this.textBoxAllInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAllInfo.Location = new System.Drawing.Point(12, 220);
             this.textBoxAllInfo.Multiline = true;
             this.textBoxAllInfo.Name = "textBoxAllInfo";
