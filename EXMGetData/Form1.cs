@@ -66,6 +66,9 @@ namespace EXMGetData
                 textBoxAllInfo.Text += "Resp: <-" + ioTestSet.ReadString() + "\r\n";
 
 
+                textBoxAllInfo.Text += "FULL INFO: " + ioTestSet.ReadString() + "," + ioTestSet.ReadString();
+
+
            
             }
         }
