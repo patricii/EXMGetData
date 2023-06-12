@@ -1,0 +1,9 @@
+C:\DEVELOPMENT PROJECTS\EXMGetData\EXMGetData\bin\Debug\EXMGetData.exe
+C:\DEVELOPMENT PROJECTS\EXMGetData\EXMGetData\bin\Debug\EXMGetData.pdb
+C:\DEVELOPMENT PROJECTS\EXMGetData\EXMGetData\obj\x86\Debug\Interop.BASICFORMATTEDIOLib.dll
+C:\DEVELOPMENT PROJECTS\EXMGetData\EXMGetData\obj\x86\Debug\EXMGetData.csproj.ResolveComReference.cache
+C:\DEVELOPMENT PROJECTS\EXMGetData\EXMGetData\obj\x86\Debug\EXMGetData.FormMain.resources
+C:\DEVELOPMENT PROJECTS\EXMGetData\EXMGetData\obj\x86\Debug\EXMGetData.Properties.Resources.resources
+C:\DEVELOPMENT PROJECTS\EXMGetData\EXMGetData\obj\x86\Debug\EXMGetData.csproj.GenerateResource.Cache
+C:\DEVELOPMENT PROJECTS\EXMGetData\EXMGetData\obj\x86\Debug\EXMGetData.exe
+C:\DEVELOPMENT PROJECTS\EXMGetData\EXMGetData\obj\x86\Debug\EXMGetData.pdb
